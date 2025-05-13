@@ -3,6 +3,9 @@ from src.models.llm_config import get_llm
 from src.chains.rag_chain import create_rag_chain, create_direct_response_chain
 from typing import Dict, Any
 from langchain_core.runnables import RunnableBranch
+import os
+from langsmith import Client
+from langsmith.run_helpers import traceable
 
 def create_query_classifier(categories: Dict[str, str]):
     """
@@ -79,22 +82,29 @@ def create_router_chain(retriever):
             return {"query": query, "chain": "rag"}
         else:
             # General or account queries can be handled directly
-            return {"query": query, "chain": "direct"}
-      # Create the router chain
+            return {"query": query, "chain": "direct"}    # Create the router chain
     def route_and_execute(query):
         routing = route_query(query)
         
+        # Initialize LangSmith client
+        client = Client()
+        
         # Thực thi chuỗi phù hợp dựa trên phân loại
         try:
-            if routing["chain"] == "rag":
-                response = rag_chain.invoke(query)
-            else:
-                response = direct_chain.invoke(query)
-                
-            # Ghi log thông tin về phân loại và chuỗi được sử dụng (thay vì dùng LangSmith)
-            print(f"Query: '{query[:50]}...' was routed to {routing['chain']} chain")
+            # Trace the execution with LangSmith
+            @traceable(project_name="ecommerce_chatbot", name=f"Query: {query[:50]}...")
+            def execute_chain():
+                if routing["chain"] == "rag":
+                    response = rag_chain.invoke(query)
+                    print(f"Query: '{query[:50]}...' was routed to RAG chain")
+                    return {"response": response, "chain_type": "rag"}
+                else:
+                    response = direct_chain.invoke(query)
+                    print(f"Query: '{query[:50]}...' was routed to direct chain")
+                    return {"response": response, "chain_type": "direct"}
             
-            return response
+            result = execute_chain()
+            return result["response"]
             
         except Exception as e:
             # Xử lý lỗi một cách nhẹ nhàng

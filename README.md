@@ -1,6 +1,6 @@
 # ShopSmart E-commerce Customer Support Chatbot
 
-A RAG-based customer support chatbot for an e-commerce platform that leverages Google Gemini 1.5 Flash-8B, LangChain components, and Streamlit to provide helpful responses to customer queries.
+A RAG-based customer support chatbot for an e-commerce platform that leverages Google Gemini models, LangChain components, and Streamlit to provide helpful responses to customer queries.
 
 ## Features
 
@@ -53,8 +53,8 @@ E-Commerce-Chatbot/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/ecommerce-chatbot.git
-   cd ecommerce-chatbot
+   git clone https://github.com/ThanhBuiKhacNhat/E-Commerce_Customer_Support_Chatbot.git
+   cd E-Commerce_Customer_Support_Chatbot
    ```
 
 2. Install dependencies:
@@ -118,4 +118,4 @@ MIT
 
 ## Contact
 
-Your Name - your.email@example.com
+Thanh Bui - your.email@example.com

@@ -81,14 +81,21 @@ def initialize_retriever():
         documents = load_documents_from_folder(data_path)
         vector_store = create_vector_store(documents, persist_directory)
         vector_store.persist()
-    
-    # Create retriever
+      # Create retriever
     return vector_store.as_retriever(
         search_kwargs={"k": 2}  # Giảm từ 3 xuống 2 để giảm số lượng token
     )
 
-# Bỏ qua LangSmith để tránh lỗi
-st.sidebar.info("💡 LangSmith tracing is disabled")
+# Check if LangSmith API key is available
+if os.getenv("LANGCHAIN_API_KEY"):
+    try:
+        from langsmith import Client
+        client = Client()
+        st.sidebar.success("✅ Connected to LangSmith - Tracing enabled")
+    except Exception as e:
+        st.sidebar.warning(f"⚠️ LangSmith connection error: {str(e)}")
+else:
+    st.sidebar.info("💡 LangSmith tracing is disabled")
 
 # Get the retriever
 retriever = initialize_retriever()
