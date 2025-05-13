@@ -118,4 +118,4 @@ MIT
 
 ## Contact
 
-Thanh Bui - your.email@example.com
+NhatThanh - thanhbuikhacnhat162@gmail.com
