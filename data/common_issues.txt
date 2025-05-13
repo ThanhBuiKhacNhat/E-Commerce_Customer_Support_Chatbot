@@ -1,0 +1,41 @@
+Common Issues and Solutions:
+
+Issue: I forgot my password
+Solution: 
+1. Go to the login page and click "Forgot Password"
+2. Enter the email address associated with your account
+3. Check your email for a password reset link (check spam folder if not found)
+4. Click the link and follow instructions to create a new password
+5. If you don't receive the email within 10 minutes, contact customer support
+
+Issue: My order hasn't arrived yet
+Solution:
+1. Check your order status in your account dashboard
+2. Verify the expected delivery date based on your chosen shipping method
+3. Use the tracking number provided in your shipping confirmation email
+4. If the package shows as delivered but you haven't received it, check with neighbors
+5. Contact customer service if your order is more than 2 days past the expected delivery date
+
+Issue: I received the wrong item
+Solution:
+1. Take a photo of the incorrect item with the original packaging
+2. Contact customer service with your order number and photos
+3. We'll arrange a return shipping label and send the correct item
+4. You won't be charged for return shipping in this case
+5. The correct replacement will be shipped with expedited shipping at no cost
+
+Issue: The item I want is out of stock
+Solution:
+1. Click the "Notify Me" button on the product page
+2. Enter your email to receive a notification when the item is restocked
+3. Check our "Similar Products" recommendations for alternatives
+4. Some seasonal items may not be restocked; our customer service can advise
+5. For limited edition items, we cannot guarantee restocking
+
+Issue: My discount code isn't working
+Solution:
+1. Check that the code is entered exactly as shown, including capitalization
+2. Verify that the code hasn't expired
+3. Ensure your purchase meets minimum requirements (e.g., minimum purchase amount)
+4. Check if the code excludes certain brands or products
+5. Discount codes generally cannot be combined with other promotions

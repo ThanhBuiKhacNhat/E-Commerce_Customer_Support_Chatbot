@@ -1,0 +1,39 @@
+Product ID: P001
+Name: Premium Wireless Headphones
+Price: $129.99
+Description: High-quality wireless headphones with noise cancellation, 30-hour battery life, and comfortable over-ear design.
+Category: Electronics
+In Stock: Yes
+Warranty: 2 years
+
+Product ID: P002
+Name: Smartwatch Pro
+Price: $199.99
+Description: Advanced smartwatch with heart rate monitoring, GPS tracking, sleep analysis, and 5-day battery life. Water-resistant up to 50m.
+Category: Electronics
+In Stock: Yes
+Warranty: 1 year
+
+Product ID: P003
+Name: Organic Cotton T-Shirt
+Price: $24.99
+Description: Comfortable, eco-friendly t-shirt made from 100% organic cotton. Available in multiple colors and sizes from S to XXL.
+Category: Clothing
+In Stock: Yes
+Warranty: 30-day satisfaction guarantee
+
+Product ID: P004
+Name: Professional Chef's Knife
+Price: $89.99
+Description: High-carbon stainless steel chef's knife with ergonomic handle. Perfect for professional and home chefs alike.
+Category: Kitchen
+In Stock: Limited
+Warranty: Lifetime
+
+Product ID: P005
+Name: Ultra HD Smart TV (55-inch)
+Price: $699.99
+Description: 55-inch Ultra HD Smart TV with HDR, built-in streaming apps, and voice control capability.
+Category: Electronics
+In Stock: Yes
+Warranty: 3 years
